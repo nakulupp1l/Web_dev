@@ -1,0 +1,8 @@
+.box{
+    background-color: blue;
+    color: white;
+    margin:200px;
+    transform: scale(4,2);
+    transform: rotate(-180deg);
+    transform: skew(-10deg,-20deg);
+}

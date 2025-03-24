@@ -1,0 +1,48 @@
+.box{
+    height: 400px;
+    width: 400px;
+    border: 2px solid black;
+    background-image: linear-gradient(to top right,red,blue);
+    background-image: radial-gradient(circle,rgba(255,0,0,0),blue);
+    background-image: conic-gradient(90 ,red 20,blue 90);
+    margin: 50px;
+    padding: 75%;
+    box-sizing:border-box;
+}
+.box2{
+    height: 200px;
+    width: 200px;
+    border: 2px solid black;
+    background-image: linear-gradient(to top right,red,blue);
+    background-image: radial-gradient(circle,red ,blue, orange);
+   
+    background-image: conic-gradient(red,orange,yellow,green blue);
+    
+    margin: 25px;
+    padding: 50%;
+    box-sizing:border-box;
+    
+}
+.flag{
+    height: 400px;
+    width: 400px;
+    border: 2px solid black;
+    background-image: linear-gradient(orange,white,green);
+    /* background-image: radial-gradient(circle,red ,blue, orange); */
+    margin: 25px;
+    padding: 50%;
+    box-sizing:border-box;
+}
+.chess {
+    height: 100px;
+    width: 100px;
+    background: conic-gradient(
+        #fff 0.25turn,
+        #000 0.25turn 0.5turn,
+        #fff 0.5turn 0.75turn,
+        #000 0.75turn
+      )
+      top left / 25% 25% repeat;
+    border: 1px solid;
+  }
+  

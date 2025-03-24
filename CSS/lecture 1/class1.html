@@ -1,0 +1,99 @@
+<!-- 
+selectors are used to select elements
+ 1. *element  
+    *class: used . operator used to select multiple
+     tags you can write <p class="name of class">
+    *id : >it is unique(not for grouping)
+          >#  is used
+ 2. pseudo-class
+        it make changes in special state in character
+        button:hover{
+        color: green;
+        }
+        there is dot operator used here
+ 3. multiple
+        grouping selector
+        x tag,ytag,z tag{
+        color: jaise voh badalti hai;
+        action: bhul ja bhai
+        }
+    
+    //it is home work toh kar layyio beticdddd
+    4.Universal selector
+    5.Nested selector
+    6.Attribute selector
+
+ element selector is type or tag 
+ to change a property of a particular tag
+ p{
+ color:red;
+ }
+
+ //there are 3 ways to add styling
+ 1 inine  2 internal   3 external
+-->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+         <!--ELEMENT SELECTOR-->
+         <!--internal css-->
+    <style>
+      /*  p{
+            color: red;
+            font-size:larger;
+        }
+        h1{
+            background-color: aquamarine;
+        }
+        table{
+            border: 10px solid black;
+        }*/
+
+        .green{
+            color:orange;
+        }
+        .small{
+            font-size: small;
+        }
+        .large{
+            font-size: large;
+        }
+        #sub{
+            color: aquamarine;
+            touch-action: cross-slide-x;
+        } 
+        button:hover{
+            color:blueviolet;
+        }
+        a:hover{
+            font-size: xx-large;
+        }
+    </style>
+ </head>
+ <body>
+    <p style="color: brown;">it is inline css it has more priority than external css</p>
+    <p>Bhai Bhul gayye the kya</p>
+    <h1>abh sabh akele hi karna hai</h1>
+
+    <h1 class="green">Bolo Zuban kesari</h1>
+    <h1 class="small">hakuna </h1>
+    <h2 class="small">batata</h2>
+    <h3 class="small">allu</h3>
+    <h4 class="large">ka</h4>
+    <h5 class="large">parantha</h5>
+    <h6 class="large">arrey re</h6>
+
+    <button id="sub" >SUBMIT</button>
+    <br>
+    <br>
+    <a href="https://www.google.com/" target="blank">Click toh kar</a>
+ </body>
+ </html>
+<!-- 
+specificity
+tag class id inline !important 
+-->

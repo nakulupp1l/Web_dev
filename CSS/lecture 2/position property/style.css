@@ -1,0 +1,33 @@
+div{
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    background-color: red;
+    color: yellow;
+    border: 1px solid black;
+}
+#box3{
+    position: absolute;
+    top:100px;
+    left: 50px;
+}
+#box1{
+    /*
+    fixed screen pe vaha fixed ho jayegi
+    absolute top corner ke basis pe chalegi nearest non stactic ancestor
+                     ke according hoti hai
+    relative apni orginal position ke according chalegi
+
+    */
+}
+.wrapper{
+    height: 1000px;
+    width: 10000px;
+    background-color: yellow;
+}
+#box4{
+    position: sticky;
+    top:0px;
+    left: 10px;
+
+}

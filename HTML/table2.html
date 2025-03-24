@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework Questions</title>
+</head>
+<style>
+    body{
+        background-color:rgb(208, 101, 224);
+    }
+    table,th,td{
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+
+    thead{
+        background-color: red;
+    }
+    tbody{
+        background-color: yellow;
+    }
+</style>
+<body>
+    <!--table wala-->
+    <div>
+        <table>
+            <thead>
+            <tr>
+                <th rowspan="3">Day</th>
+                <th colspan="3">Seminar</th>
+            </tr>
+            <tr>
+                <th colspan="2">Schedule</th>
+                <th rowspan="2">Topic</th>
+            </tr>
+            <tr>
+                <th>Begin</th>
+                <th>End</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td rowspan="2">Monday</td>
+                <td rowspan="2">8 am</td>
+                <td rowspan="2">5 am</td>
+                <td>intro to xml</td>
+            </tr>
+            <tr>
+                <td>validity:dtd and relax ng</td>
+            </tr>
+            <tr>
+                <td rowspan="3">Tuesday</td>
+                <td>8 am</td>
+                <td>11 am</td>
+                <td>X Path</td>
+            </tr>
+            <tr>
+                <td>11 am</td>
+                <td>2 pm</td>
+                <td rowspan="2">xsl trans.</td>
+            </tr>
+            <tr>
+                <td>2 pm</td>
+                <td>5 pm</td>
+            </tr>
+            <tr>
+                <td>Wednesday</td>
+                <td>8 am</td>
+                <td>12 pm</td>
+                <td>xsl formatting objects</td>
+            </tr>
+        </tbody>
+        </table>
+    </div>
+    <br>
+    <br>
+    <h1>iframe</h1>
+    <iframe src="index.html" frame-border="3" height="80%" width="90%">hello</iframe>
+    
+    <br><br><br>
+    <audio controls>
+        <source src="img/Crayon Shinchan.mp3" type="audio/mp3">
+    </audio> 
+    <video controls>
+        <source src="img/video.mp4" type="video/mp4" width="100%" height="100%">
+    </video>
+    <br><br><br><br>
+    <!--form-->
+    <div>
+        <h1>Welcome to CodeHelp!</h1>
+        <h3>Contact Us Form</h3>
+        <form action="index.html">
+            <label for="name">Name:  </label>
+            <input type="text" name="name" id="Name" placeholder="Enter Your Name">
+            <br><br>
+            <label for="EMAIL">Email   </label>
+            <input type="text" name="Email" id="EMAIL" placeholder="Enter Your Mail id">
+            <br><br>
+            <label for="contact">Contact</label>
+            <input type="number" name="name" id="contact" >
+            <br><br>
+            <label for="gender">Gender</label>
+              <select name="gender" id="gender">
+                <option value="M">Male</option>
+                <option value="FM">Female</option>
+              </select>
+              <br><br>
+              <label for="dob">Date of Birth</label>
+              <input type="date" name="date" id="date">
+              <br><br>
+              <label for="ratings">Ratings</label>
+               <input name="xxx" type="radio" id="0" value="0">
+              <label for="0">0</label>
+              <input name="xxx" type="radio" id="1" value="1">
+             <label for="1">1</label>
+             <input name="xxx" type="radio" id="2" value="2">
+            <label  for="2">2</label>
+            <input name="xxx" type="radio" id="3" value="3">
+           <label for="3">3</label>
+           <input name="xxx" type="radio" id="4" value="4">
+          <label for="4">4</label>
+          <!--radio input will have same name-->
+          <br><br>
+          <label for="long text">Enter your message</label><br>
+          <textarea name="ta" rows="5" cols="50" placeholder="text aarea ek seperate tag hai"></textarea>
+          <br><br>
+          <br><br>
+          <input type="submit" value="Submit" id="ok ji">
+          <input type="reset" value="Reset" id="par kyu">
+        </form>
+        <br><br>
+        <footer>
+            <a href="https://www.youtube.com" target="blank_">
+                <img src="https://tse3.mm.bing.net/th?id=OIP.RiHClZVUkF-GYdKaZIEcxAHaEG&pid=Api&P=0&h=180" alt="youtube" width="50" height="50">
+            </a> 
+            
+            <a href="https://www.instagram.com" target="blank_">
+                <img src="https://tse4.mm.bing.net/th?id=OIP.xcRSq8izYHoVq439YqUFzQHaHI&pid=Api&P=0&h=180" alt="youtube" width="50" height="50">
+            </a>
+            
+            <a href="https://www.x.com" target="blank_">
+                <img src="https://tse2.mm.bing.net/th?id=OIP.LwNf2FEwcoUNIcQTL-c2nAHaEK&pid=Api&P=0&h=180" alt="youtube" width="50" height="50">
+            </a>
+        </footer>
+    </div>
+</body>
+</html>
