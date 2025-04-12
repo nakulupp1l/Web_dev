@@ -1,0 +1,48 @@
+*{
+    box-sizing: ;
+}
+.container{
+    width: 500px;
+    height: 400px;
+    border: 2px solid green;
+    display: flex;
+    /* flex-direction: row-reverse;  */
+    flex-wrap: wrap;
+    /* flex-flow: row-reverse wrap; */
+    justify-content: start;
+    justify-content: end;
+    justify-content: center;
+    justify-content: space-around;
+    justify-content: space-evenly;
+    justify-content: space-between   ;
+    align-content: center;
+    /*  */
+    align-items: start;
+    /* gap: 10px; */
+
+
+
+} 
+.box{
+    border:1px solid brown;
+    background-color: aqua;
+    width: 100px;
+    /* flex basis se overflow wala content hide nhi hota */
+    flex-basis: 100px;
+
+    /* flex is a short hand notation for
+    order flex grow flex shrink and flex bais*/
+    ;
+}
+#box2{
+    order:-1;
+    flex-grow: 1;
+    /* at how much speed it will shrink the box */
+    flex-shrink: 4;
+    align-self: stretch
+}
+#box1{
+    order: 3;
+    flex-grow: 1;
+    align-self: flex-end;
+}
