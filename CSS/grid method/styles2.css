@@ -1,0 +1,17 @@
+.container{
+    background-color: blue;
+    height: 100vh;
+    /* width: 100vh; */
+    display: grid;
+    gap: 3px;
+    grid-template-columns: 2fr 8fr; 
+    grid-template-rows: 1fr 10fr 1fr;
+}
+.box{
+    background-color: aliceblue;
+    border: solid blue 1px;
+}
+#box1,#box4{
+grid-column-start: 1;
+grid-column-end: 3;
+}
