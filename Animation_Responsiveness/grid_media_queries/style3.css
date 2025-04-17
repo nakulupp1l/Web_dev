@@ -1,0 +1,32 @@
+.container{
+    background-color: yellow;
+    height: 100vh;
+    border: solid red 1px;
+    display: grid;
+    grid-auto-rows: minmax(100px,auto);
+    /* grid-template-columns: 1fr 2fr 3fr; */
+    /* grid-auto-columns: minmax(1px,auto); */
+    grid-auto-columns: min-content;
+}
+.box{
+    background-color: aqua;
+    /* height: 100px; */
+    /* width: 100px; */
+    border: solid green 1px;
+    margin: 2px;
+    padding: 5px;
+}
+
+/* 
+1.Justify content: align content based on main axis
+2.align-items: align based on cross axis
+(these both are used on parent in our case container)
+3.justify self and align sef are used on child
+4 align content : rows kebich mein ki spacing
+(on whole grid)
+shorthabd notations
+*place items
+*place self
+
+what is grid and inline grid?
+*/
