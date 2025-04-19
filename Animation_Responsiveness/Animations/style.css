@@ -1,0 +1,24 @@
+*{
+    --green:rgb(1,1,1);
+ }
+
+:root{
+    --green:rgb(87, 0, 174);
+} 
+
+
+ /* both universal and root are working same 
+ but root has lower priority than univesal selector*/
+.container{
+    border: 1px solid brown;
+    background-color: red;
+    height: 300px;
+    width: 300px;
+    background-color: var(--green);
+}
+.box{
+    border: 1px solid green;
+    background-color: aqua;
+    --dark-red: #981a2c;
+    color: var(--dark-red);
+}

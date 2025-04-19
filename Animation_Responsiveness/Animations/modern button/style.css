@@ -1,0 +1,35 @@
+.container{
+background-color: antiquewhite;
+height: 100vh;
+width: 100vw;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.butt{
+    color: white;
+    background-color: red;
+    padding:0.8rem 2.3rem ;
+    font-size: 18px;
+    box-shadow: 5px 5px 7px 0px rgb(60, 58, 58);
+    position: relative;
+    z-index: 1;
+    
+}
+.butt::before{
+    content: "";
+    background-color: rgb(38, 31, 31);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: all 0.8s;
+    /* transition-duration: 1s; */
+    z-index: -1;
+}
+.butt:hover::before{
+    transform: scaleX(1);
+}

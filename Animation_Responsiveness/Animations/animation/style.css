@@ -1,0 +1,71 @@
+.container{
+    background-color: yellow;
+    height: 300px;
+    width: auto;
+    border: 1px dotted black;
+}
+.box{
+    margin:4px;
+    background-color: aqua;
+    height: 290px;
+    width: 200px;
+    border: 1px solid black;
+    /* animation-name: nakul;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+    animation-delay: 2.5s;
+    animation-direction: alternate; */
+    
+}
+
+/* @keyframes nakul{
+    from{ 
+        width: 200px;
+        background-color: rgb(255, 0, 183);
+    }
+    to{
+        width: 100%;
+        background-color: pink;
+        transform: rotate(40deg) scale(0.5) translateX(410px) translateY(90px);
+        box-shadow: 10px 5px 5px rgb(0, 255, 26);
+    }
+} */
+.circle {
+    width: 290px;
+    height: 100%;
+    background-color: white;
+    border-radius: 50%;
+    animation-name: nakul;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+    animation-delay: 2.5s;
+    /* animation-direction: alternate; */
+
+    /* iska nhi pata */
+    animation-fill-mode: both;
+}
+
+ @keyframes nakul{
+    0%{
+        background-color: white;
+        transform: scale(1);
+    }
+    25%{
+        background-color: aqua;
+        transform: scale(1.25);
+    }
+    50%{
+        background-color: lightblue;
+        transform: scale(1.5);
+    }
+    75%{
+        background-color: burlywood;
+        transform: scale(1.75);
+    }
+    100%{
+        background-color: blueviolet;
+        transform: scale(2);
+    }
+ }
