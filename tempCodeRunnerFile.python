@@ -1,0 +1,28 @@
+import matplotlib.pyplot as plt
+
+# Data
+revenue_streams = [
+    "Freemium App Users (B2C)",
+    "API Usage (B2B Pilot Programs)",
+    "Small Institutional Grants",
+    "Hackathon/Startup Event Prizes",
+    "Workshops or Educational Training"
+]
+
+revenues = [172000, 428000, 1284000, 428000, 257000]
+
+# Plot
+plt.figure(figsize=(10, 6))
+bars = plt.barh(revenue_streams, revenues, color='salmon', alpha=0.7)
+
+# Title and labels
+plt.xlabel('Estimated Annual Revenue (₹)')
+plt.title('Revenue Streams for FakeOff')
+
+# Add value labels
+for bar, value in zip(bars, revenues):
+    plt.text(value + 10000, bar.get_y() + bar.get_height()/2,
+             f'₹{value:,}', va='center', fontsize=10)
+
+plt.tight_layout()
+plt.show()
