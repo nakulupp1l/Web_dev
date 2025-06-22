@@ -1,0 +1,107 @@
+1) inner HTML
+it get/set html content
+eg. (int console)
+let x=document.querySelector('.nameOfClass');
+x
+//get
+x.innerHTML
+//set
+x.innerHTML=' ';
+//get
+x.innerHTML;
+//it would be emptied
+
+2) outerHTML
+no idea as such
+it get or set content as well as elment itself
+x.outerHTML
+
+3)text content and inner text
+get or set text content
+DIFFERENCE:
+assume a case in which u are using tage under tag
+<p>
+     <b></b>
+</p>
+textcontent will show tag as tag only whereas innertext
+render it
+if display is hidden it will not be visible 
+under innerHTML
+
+//adding new element /content
+let x=document.createElement();
+content.appendChild(x);
+..
+let child=document.createElement('p');
+let content=document.querySelector('.nameOfClass);
+content
+content.appendChild(child);
+content
+
+//creating a text node
+continuing the same example
+2 ways
+1)Idiotic way
+  let newpara=document.createElement('p');
+  let textpara=document.createTextNode('Im the text);
+  newpara.appendChild(textpara);
+  content.appendChild(newpara);
+2)Fast way
+  let mypara=document.createElement('p');
+  mypara.textContent='I'm the Text.';
+  content.appendChild(mypara);
+...
+it will always add at last siblings
+so we can also use tags so that we can add 
+anywhere whether starting or in between using tags
+like  .insertAdjacentHTML();
+it has to be called with 2 arguments: location/position
+                                      HTML text/content
+where and what
+where=> beforebegin,afterbegin,beforeend,afterend
+
+let x=document.createElement('h1');
+x.textContent='Jaisa tu bol';
+let content=document.querySelector('.xyz');
+content.insertAdjacentHTML('beforeBegin',x);
+
+//removing element
+.removeChild();
+we need to know parent element and the child to be 
+removed
+parent.removeChild(child);
+>>easy way to remove
+  child.parent.remove(child);
+
+.........................................................................
+now changing style content css using Js
+.style
+.cssText
+.setAttribute
+.className
+.classList
+
+specificity in css
+external spreadsheet
+internal css
+inline css
+
+let content=$0;
+content;
+//using this only single at a time
+>content.style.color='red';
+>content.style.backgroundColor='white';
+//using multiple at a time
+>content.style.cssText='color:green ;
+ backgroundcolor:blue; font-size:4em;';
+>content.setAttribute("style","color:green;
+ font-size:16em;");
+>content.setAttribute('id','kuchBhi');
+>content.className;
+>typeof(content.className);(String hoga)
+>content.className.trim().split(' ');
+>content.classList;
+>typeof(content.classList);
+>>add()..remove()..toggle()..contains()
+in toggle=>if element id present will delete it
+           if absent will add it 
