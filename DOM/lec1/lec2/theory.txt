@@ -1,0 +1,100 @@
+BROWSER EVENTS
+  if i click a button then only code runs
+  eg: clicking,scroll,resize,etc
+
+  what are EVENTS
+  how to respond to EVENTS
+  data stored in EVENTS
+  stopping an EVENTS
+  lifecycle of an EVENTS
+
+   they are invisible but can be visible
+   through monitorEvents() the fire of EVENTS
+.................................................................
+>monitorEvents(document);(click on screen)
+>unmonitorEvents(document);
+.................................................................
+INTERFACE
+class is a blueprint 
+objects are reality
+
+in JS interface is blueprint
+Event target=interface implemented by objects
+             that can recieve events and may have
+             listeners for them.
+             it has 3 methods :
+             *addEventListener();
+                 listen to event or respond to event or hook to event.
+                 eg document,para,article,video,etc.
+                 <event-target>.addEventListener(<event to listen for>,<function to run when event happen>);
+
+             *removeEventListener();
+                 we need to require same function so we make it seperately so that when we call it we are 
+                 calling the same function(object)
+                 eg. <event>.removeEventListener(<same event to listen>,<function name>);
+             *dispatchEvent();
+             it is top level interface or entity
+
+event target <-- node <--element
+
+Node=inherit from event target
+
+Element=inherit from node
+
+==   loose equality :: it allows type coersion(js will try to convert items being compareed into same datatype)
+=== strict equality :: it prevents type coersion
+
+..............................................................................................................................
+PHASES OF EVENTS
+   1.Capturing phase
+       assuming u are finding 'p'
+       html->body->div->p it is its capturing phase
+       document.addEventListener(<event>,<function>,true);
+   2.At target phase
+       when it is at 'p' it is its at target phase
+       for this we have to write on target only directly (will work for both true and false);
+       o run code in the target phase, just add addEventListener to the target element — it 
+       always runs at the target phase regardless of useCapture.
+   3.Bubbling phase
+       p->div->body->html is its bubbling phase
+       it is by default 
+    
+    <eventType>.addEventListener(<type>,<function(listener)>,<useCapture>);
+
+EVENT object
+   When an event occurs, .addEventListener() function is an event object and it 
+   contains alot if info. about event.
+   when this addEventListener(--,func()) is executed the func() is provided with the event object which contains info about event
+
+   let content=document.querySelector('#x');
+   content.addEventListener('click',function(event){
+   console.log(event);
+   });
+
+default Action
+  say anchor tag : it by default a link to open a window
+  it can be prevented using function like .preventDefault()
+  let links=document.querySelectorAll('a');
+  let link=links[1];
+  link.addEventListener('click',function(event){
+    event.preventDefault();
+    console.log('Pagal banaya');
+   })
+
+
+ ..............................................................................................................................................
+ AVOID TOO MANY EVENTS(see code file)
+ ............................................................
+ how will you know that your html file is loaded?
+    it has an event called DOMContentLoaded which will tell whether loaded or not
+    necessary because after this only u will know be using script tag which applies on 
+    html and css tags
+
+    <html>
+       <head> 
+          <script>
+               document.addEventListener('DOMContentLoaded',func());
+          </script>
+       </head>
+       <body>..</body>
+    </html>
