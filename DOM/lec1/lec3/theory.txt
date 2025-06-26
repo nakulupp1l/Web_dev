@@ -1,0 +1,58 @@
+how to write effecient and performing code
+event loop
+measure speed of code
+
+#Performance
+   we have a std way to measure how long your code takes to run
+   performance.now();
+   it calculates timestamp
+   t1=timestamp 1
+   ..code
+   t2=timestamp 2
+   diff=t2-t1 will the time and it is accurate function
+
+   reflow=calculation of dimensions etc when new element is added
+   repaint=showing the new element pixel by pixel on screen 
+   good practise is using fewest reflow and repaint
+   it a process of calculating dimensions and position of page element and computationaly expensive task.
+   
+ *Document fragment:-
+     add all para to a document fragment(it is a light weight document object)
+     it donot have any reflow or repaint
+     reflow and repaint is done when loaded to document
+
+#Call Stack:-
+    JS is a single threaded language(process one command at one time)
+    Execution from top to bottom ;this is a synchronus language
+
+    function x(){
+        let a=document.createElement('p');
+        a.textContent='abc';
+        document.body.appendChild(a);
+        y();
+    }
+    function y(){
+        let a=document.createElement('p');
+        a.textContent='xyz';
+        document.body.appendChild(a);
+    }
+    x();
+
+    nature of code is run to completion
+    JS donot execute multiple lines/function at a same time
+    
+    so the execution in call stack is
+    main()
+    x() main()
+    console.log() x() main()
+    x() main()
+    y() x() main()
+    console.log() y() x() main()
+    y() x() main()
+    x() main()
+    main()
+    __________
+
+#EVENT LOOP:-(see in notes)
+   Synchronous (occuring at same time)
+   Asynchronous (Event Listener)
