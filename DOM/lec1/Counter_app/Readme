@@ -1,0 +1,42 @@
+# Counter App
+
+A simple, responsive counter application that allows users to increment or decrement a value using interactive buttons. Built using HTML, Tailwind CSS, and vanilla JavaScript.
+
+## 🚀 Features
+
+- Minimal and clean user interface
+- Responsive design using Tailwind CSS
+- Functional increment and decrement buttons
+- Font Awesome icons for visual clarity
+
+## 📁 Project Structure
+├── index.html # Main HTML page
+├── index.js # JavaScript logic for the counter
+
+## 🛠️ Technologies Used
+
+- HTML5
+- Tailwind CSS (via CDN)
+- Font Awesome Icons (via CDN)
+- JavaScript (vanilla)
+
+## 🔧 How to Run
+
+1. Clone or download the repository.
+2. Open the `index.html` file in any modern browser.
+3. Click on the `+` or `–` icons to increase or decrease the counter.
+
+## 📸 Preview
+
+The UI features a central card with two buttons:
+- ➖ (decrement): decreases the number
+- ➕ (increment): increases the number
+
+## 📌 Note
+
+- No frameworks or build tools required — everything runs directly in the browser.
+- Make sure you have internet access to load Tailwind and Font Awesome from the CDN.
+
+## 📄 License
+
+This project is open-source and available under the [MIT License](LICENSE).
