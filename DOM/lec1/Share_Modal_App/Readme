@@ -1,0 +1,89 @@
+# Share Profile Modal - Nakul Uppal
+
+A stylish, responsive profile card featuring a modal popup with social media share buttons. Built using HTML, CSS, and JavaScript. The UI includes smooth animations, gradients, and a clean layout for an engaging user experience.
+
+---
+
+## 📸 Preview
+
+The project displays:
+- A personal card with photo, name, and designation
+- A **"Share My Profile"** button that triggers a modal with social icons
+- A **"Follow Me"** button (UI only)
+- Floating animated gradient background circles
+
+---
+
+## 🌐 Live Demo
+
+> *(Add your deployed link here if hosted on GitHub Pages, Vercel, Netlify, etc.)*
+
+---
+
+## 📁 Project Structure
+├── index.html # Main HTML structure
+├── style.css # Complete UI design and animations
+├── index.js # Modal open/close logic
+├── assets/ # Contains images (user photo, favicon)
+
+
+---
+
+## 🚀 Features
+
+- Elegant profile card layout
+- Responsive modal popup
+- Animated gradient background elements
+- Click-to-close modal with dark overlay
+- Interactive social media icons with hover effects
+- Fully responsive for mobile and tablet screens
+
+---
+
+## 🛠️ Built With
+
+- HTML5
+- CSS3 (Custom gradients, animations, responsive media queries)
+- JavaScript (Vanilla)
+- Font Awesome Icons
+- Tailwind CSS CDN (for base utility classes, optional)
+
+---
+
+## 🧰 How to Use
+
+1. **Clone or download** this repository.
+2. Ensure your `assets/` folder contains:
+   - `circle_nakul.jpg` (user image)
+   - `OIP.ico` (favicon)
+3. Open `index.html` in any browser.
+
+**Modal Logic**:
+- Clicking `Share My Profile` opens the modal
+- Clicking outside the modal or the close icon closes it
+
+---
+
+## 📌 Notes
+
+- The modal uses `.active` and `.overlayactive` classes to trigger transitions
+- Responsive design is handled with media queries for devices under 850px and 400px widths
+- Tailwind is loaded via CDN for utility styling, but most layout is custom CSS
+
+---
+
+## 🖼️ Customization
+
+- Replace `circle_nakul.jpg` with your photo in the `assets` folder
+- Update modal social links to your actual profile URLs
+- Tweak colors and animations in `style.css` to match your branding
+
+---
+
+## 📄 License
+
+This project is available for personal use and modification. No commercial license included.
+
+---
+
+> Made with ❤️ by **Nakul Uppal**
