@@ -13,17 +13,24 @@ const generateBtn = document.querySelector(".generateButton");
 const allCheckBox = document.querySelectorAll("input[type=checkbox]");
 const symbols = '~`!@#$%^&*()_-+={[}]|:;"<,>.?/';
 
+
 //initially
 let password = "";
 let passwordLength = 10;
 let checkCount = 0;
 handleSlider();
-//set strength circle color to grey
+//ste strength circle color to grey
+setIndicator("#ccc");
+
 
 //set passwordLength
 function handleSlider() {
     inputSlider.value = passwordLength;
     lengthDisplay.innerText = passwordLength;
+    //or kuch bhi karna chahiye?
+    const min = inputSlider.min;
+    const max = inputSlider.max;
+    inputSlider.style.backgroundSize = ( (passwordLength - min)*100/(max - min)) + "% 100%"
 }
 
 function setIndicator(color) {
@@ -78,27 +85,26 @@ function calcStrength() {
 async function copyContent() {
     try {
         await navigator.clipboard.writeText(passwordDisplay.value);
-        copyMsg.innerText = "copied";
+        copyMsg.innerText = "Copied";
     }
     catch(e) {
         copyMsg.innerText = "Failed";
     }
     //to make copy wala span visible
-    // copyMsg.classList.add("active");
+    copyMsg.classList.add("active");
 
-    // setTimeout( () => {
-    //     copyMsg.classList.remove("active");
-    // },2000);
-    setTimeout(() => {
-        copyMsg.innerText = "";
-    }, 2000);
+    setTimeout( () => {
+        copyMsg.classList.remove("active");
+    },2000);
 
 }
 
 function shufflePassword(array) {
     //Fisher Yates Method
     for (let i = array.length - 1; i > 0; i--) {
+        //random J, find out using random function
         const j = Math.floor(Math.random() * (i + 1));
+        //swap number at i index and j index
         const temp = array[i];
         array[i] = array[j];
         array[j] = temp;
@@ -149,29 +155,9 @@ generateBtn.addEventListener('click', () => {
         handleSlider();
     }
 
-    // let's start the jouney to find new password
     console.log("Starting the Journey");
     //remove old password
     password = "";
-
-    //let's put the stuff mentioned by checkboxes
-
-    // if(uppercaseCheck.checked) {
-    //     password += generateUpperCase();
-    // }
-
-    // if(lowercaseCheck.checked) {
-    //     password += generateLowerCase();
-    // }
-
-    // if(numbersCheck.checked) {
-    //     password += generateRandomNumber();
-    // }
-
-    // if(symbolsCheck.checked) {
-    //     password += generateSymbol();
-    // }
-
     let funcArr = [];
 
     if(uppercaseCheck.checked)
