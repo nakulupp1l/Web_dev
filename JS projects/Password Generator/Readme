@@ -1,1 +1,96 @@
-hello
+---
+# 🔐 Password Generator
+
+A sleek, responsive, and secure **Password Generator** built with HTML, CSS, and JavaScript. It allows users to create strong passwords with customizable options like length, character types, and real-time strength indicators.
+
+![password generator screenshot](https://via.placeholder.com/800x400.png?text=Password+Generator+UI+Preview)
+
+---
+
+## 🌟 Features
+
+* 🎚 Adjustable password length (1–20 characters)
+* ✅ Includes uppercase, lowercase, numbers, and symbols
+* 🧠 Password strength indicator (weak / medium / strong)
+* 🔀 Secure random generation and Fisher-Yates shuffle
+* 📋 Copy-to-clipboard functionality with visual feedback
+* 💅 Beautiful UI with modern CSS and smooth interaction
+
+---
+
+## 🚀 How to Use
+
+1. **Clone or Download** the repository.
+
+   ```bash
+   git clone https://github.com/yourusername/password-generator.git
+   cd password-generator
+   ```
+
+2. **Open `index.html` in your browser**.
+
+3. **Adjust Settings:**
+
+   * Use the slider to set the password length.
+   * Check the boxes for character types (uppercase, lowercase, numbers, symbols).
+   * Click **Generate Password**.
+
+4. **Copy Password:**
+
+   * Click the copy icon to copy the password to clipboard.
+   * Tooltip will show feedback (`Copied` or `Failed`).
+
+---
+
+## 📁 Project Structure
+
+```bash
+password-generator/
+├── index.html         # Main HTML structure
+├── style.css          # Styling (responsive + theme)
+├── index.js           # Logic and interactions
+└── assets/
+    └── copy.svg       # Copy icon used in UI
+```
+
+---
+
+## 📸 UI Preview
+
+> 💡 Dark-themed modern layout with responsive elements.
+
+| Main Page                                                 | Copy Feedback                                                    |
+| --------------------------------------------------------- | ---------------------------------------------------------------- |
+| ![](https://via.placeholder.com/400x300.png?text=Main+UI) | ![](https://via.placeholder.com/400x300.png?text=Copied+Tooltip) |
+
+---
+
+## 🛠 Built With
+
+* **HTML5**
+* **CSS3 (Custom properties + transitions)**
+* **Vanilla JavaScript (ES6)**
+
+---
+
+## ⚙️ Customization Tips
+
+* Modify color themes in `:root` inside `style.css`.
+* Extend character set in `symbols` variable in `index.js`.
+* Adjust strength logic in `calcStrength()` if needed.
+
+---
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+---
+
+## 🙌 Acknowledgments
+
+* Fonts: [League Spartan - Google Fonts](https://fonts.google.com/specimen/League+Spartan)
+* Icon: [`copy.svg`](./assets/copy.svg)
+
+---
+
